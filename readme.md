@@ -6,7 +6,7 @@
 
 - PC STATS LOG:
  ##### node modules:
-       - File System
+      - File System
       - OS
       - EVENTS
       - PATH
