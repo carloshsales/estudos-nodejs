@@ -8,7 +8,8 @@
    ##### node modules:
       - File System
       - OS
-      - EVENTS
-      - PATH
+      - Events
+      - Path
+      - HTTP
 
 #
