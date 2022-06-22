@@ -3,6 +3,7 @@ const log = require('./logger');
 
 setInterval(() => {
     const size = 1024;
+    const date = new Date();
 
     const {freemem, totalmem, platform, release} = os;
 
@@ -11,6 +12,7 @@ setInterval(() => {
     const persent = parseInt(mem / total * 100);
 
     const stats = {
+        date: `${date}`,
         system: `SYS: ${platform}`,
         release: `RELEASE: ${release}`,
         free: `${mem} MB`,
@@ -23,7 +25,7 @@ setInterval(() => {
     console.table(stats);
 
     
-    log(`${JSON.stringify(stats)}\n`);
+    log(`${JSON.stringify(stats, null, 2)}\n`);
 
 }, 1000);
 
